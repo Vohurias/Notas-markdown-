@@ -123,4 +123,57 @@ git remote set-url origin https://github.com/Turespositorio.git
 ----- 
 # Despues de configurar 
 ## Comandos
+### Ramas
+Son zonas donde podemos hacer cambios, pruebas y mejoras sin afectar la el avance que hicimos hasta el momento
+#### Ver ramas existentes.
+~~~ bash
+  git branch
+~~~
+    
+##### Variantes
+* Ver ramas tanto en locales como subidas a github
+~~~ bash 
+  git branch -a
+~~~
 
+#### Creacion de ramas
+~~~ bash 
+  git branch Nombre_de_la_rama
+~~~
+##### Variantes.
+* Crear ramas y moverse a ellas
+~~~ bash
+  git switch -c Nombre_de_la_rama
+~~~
+
+#### Cambiar entre ramas 
+~~~ bash 
+  git switch Nombre_de_la_rama
+~~~
+
+#### Renombrar ramas
+~~~ bash 
+  #Renombra la rama actual
+  git branch -m nuevo-nombre
+  #Renombra rama que no es la actual(En la que no estas)
+  git branch -m Nombre_de_la_rama nuevo-nombre
+~~~
+
+#### Juntar ramas 
+Permite juntar la rama actual con la rama que seleccionemos, esto permite traer los cambios de otra rama a la rama actua.
+~~~ bash 
+  git merge Nombre_de_la_rama
+~~~
+
+> [!Warning]
+> Antes de hacer algo con una rama debes de hacer un commint sino perderas archivos y datos
+
+#### Borrar ramas
+~~~ bash 
+#Se borra solo si se guardaron los cambios
+git branch -d Nombre_de_la_rama
+# Fuerza para borrar la rama 
+git branch -D Nombre_de_la_rama
+#Borra rama de github
+git push origin --delete Nombre_de_la_rama
+~~~
