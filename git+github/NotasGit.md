@@ -177,3 +177,37 @@ git branch -D Nombre_de_la_rama
 #Borra rama de github
 git push origin --delete Nombre_de_la_rama
 ~~~
+
+### Revisar todos los 'Commits'
+~~~ bash 
+  git log
+~~~
+
+  * Vista simplificada
+    ~~~ bash 
+     git log --oneline
+    ~~~
+
+Para ir al commit solo lectura usamos:
+~~~ bash 
+  git checkout codigo_del_commit
+~~~
+
+Para regresar al commit actual usamos 
+~~~ bash 
+  git checkout Nombre_de_la_rama
+~~~
+
+Para volver al pasado de manera permanente dejando lo actual como un commit sin guardar
+~~~ bash 
+  git reset codigo_del_commit
+  #Para regresar a atras y borrar todo lo actual
+  git reset --hard codigo_del_commit
+~~~
+
+Para crear una nueva rama con el commit seleccionado
+~~~ bash
+git checkout -b Nombre_de_la_rama_con_el_commit codigo_del_commit
+~~~
+
+
