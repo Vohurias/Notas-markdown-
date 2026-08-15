@@ -1,2 +1,0 @@
-# configurar git 
-
