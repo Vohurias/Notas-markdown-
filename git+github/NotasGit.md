@@ -163,6 +163,8 @@ Son zonas donde podemos hacer cambios, pruebas y mejoras sin afectar la el avanc
 Permite juntar la rama actual con la rama que seleccionemos, esto permite traer los cambios de otra rama a la rama actua.
 ~~~ bash 
   git merge Nombre_de_la_rama
+  #Formzar la union de dos rmas 
+  git merge Nombre_de_la_rama --allow-unrelated-histories
 ~~~
 
 > [!Warning]

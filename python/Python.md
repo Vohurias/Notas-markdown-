@@ -1,12 +1,14 @@
 # Inicio python 
+
 ## básico 
+
 ### Comentario 
 Usamos  `#` para comentar una linea
 ``` python
 # este es un comentario
 ```
->**Nota**
-> todo codigo dentro no se ejecuta 
+> **Nota**
+>> todo codigo dentro no se ejecuta 
 
 ### Mostrar o imprimir por pantalla 
 Usamos la palabra reservada `print()` para mostrar el resultado.
@@ -20,8 +22,8 @@ print("Hola")
 # hola
 
 ```
->Nota 
->podemos mostrar que un solo texto , esto se demostrar mas adelante 
+> **Nota** 
+> podemos mostrar que un solo texto , esto se demostrar mas adelante 
 ### Pedir un dato
 Usamos la palabra reservada `input()` para pedir que se ingrese un dato
 ```python
@@ -54,6 +56,43 @@ print(texto2)
 ```
 > tipo de datos 
 > str
+###### Variantes
+1. Comillas simples.
+  Podemos colocar comillas simples , pero si queremos colocar con comilla simple en y usarlo en polabras como don't se hace de esta forma o puedes usar doble comilla
+  ~~~ python
+  texto1 = 'don\'t'
+  print(texto1)
+  #don't
+  ~~~
+
+2. multiples lineas.
+  POdemos hacer uso de 3 comillas dobles para colocar multiples lineas de texto.
+  ~~~ python
+  """
+  Esto es una prueba de la 
+  cantidad de codigo que podemos colocar dentro
+  de las comillas doble x3 
+  """
+  #Esto es una prueba de la 
+  #cantidad de codigo que podemos colocar dentro
+  #de las comillas doble x3 
+~~~
+
+###### Salto de linea
+~~~ python
+print("Hola \nMundo")
+#Hola
+#Mundo
+~~~
+
+###### Sangrado 
+~~~ python
+print("Hola \tMundo")
+#Hola   mundo
+~~~ 
+
+2. Comillas dobles.
+  
 ##### Enteros (Numeros)
 ``` python 
 Numero = 1;
@@ -81,7 +120,6 @@ print(Decimal)
 ```
 > tipo de datos 
 > float
-
 
 ### Operaciones matemáticas 
 Se pueden realizar operaciones matemáticas básicas en python 
@@ -112,7 +150,7 @@ print(5/6)
 ```
 ##### Division - Resultado valores enteros 
 ```python
-print(5/6)
+print(5//6)
 #0
 ```
 ###### División- Resultado resto
@@ -124,7 +162,7 @@ print(5%6)
 > Nota
 > Al utilizar las operaciones matematicas nos puede funcionar como calculadora , pero debemos de colocar `()` para que se pueda ejecutar alguna operación antes, dependiendo de lo que quieres lograr 
 
-#### Potencia 
+##### Potencia 
 ``` python 
 Print(3**2)
 # 9
@@ -133,7 +171,41 @@ Print(3**2)
 > Nota
 > Podemos usar y colocar las operaciones dentro de variables de esta forma `n = 5+6` Esto nos permite usar operaciones salamcenando nuestra operación en una variable 
 
+## Listas
+~~~ python 
+~~~
+nombrelista = []
+### Insertar al final valor
+~~~ python
+nombre_lista.append(valor)
+~~~
 
+### Insetar en posicion especifica
+~~~ python
+nombre_lista.insert(posicion , valor)
+~~~
+## Funciones 
+~~~ python 
+def nombre_de_la_funcion(parametro1, parametro2):
+#codigo 
+return Lo_quedevuelve
+
+#LLamar a la funcion 
+resultado = nombre_de_la_funcion(parametro1, parametro2)
+~~~ 
+
+## Opciones
+~~~ python
+nombre_variable = valor
+match nombre_variable:
+  #si la variable es igual a 1
+  case 1:
+    #Codigo que hara si es igual
+    print("Es igual a 1")
+  case 2:
+    print("Es iguala 2")
+  case _:
+    print("No es ninguna de las anteriores")
 
 
 
