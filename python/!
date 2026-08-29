@@ -228,30 +228,6 @@ match nombre_variable:
     print("No es ninguna de las anteriores")
 ~~~
 
-## Comandos de la shell en un script 
-para ello necesitamos importar, contamos con dos formas
-* Forma nueva `subproces`
-
-  ~~~ python
-    import subprocess
-    print(subprocess.run(["ComandoShell","parametro"],capture_output = True, text = True, shell = True).stdout)
-    #Lo se shell es solo si usas pipe o tuberia "|"
-  ~~~
-> Nota 
->> Lo mas recomendable si tu comando para terminal es muy larga y tiene varios parametro mejor es crearlo en una varibale nueva
-  ~~~ Python
-    import subprocess 
-    codigo "ls -la"
-    print(subprocess.run(codigo, capture_output=True, text = True, shell =True).stdout)
-  ~~~
-
-* Forma Antigua os
-Esta forma ofrece menos control sobre la salida del comando
-  ~~~python 
-    import os
-    os.system("comando para la shell")
-  ~~~
-
 ## Entorno virtual
 sirve para aislar un entorno y no afectar al resto del proyecto
 ~~~ python 
@@ -284,6 +260,7 @@ img = qrcode.make("hello word")
 img.save("hello.png")
 img.show()
 ```
+## Kivi
 
 
 
